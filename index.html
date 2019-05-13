@@ -1,3 +1,17 @@
+<!--
+
+  PROJECT: Lakers
+  FILE: index.html (main project page)
+  AUTHOR: Ryan Miyamoto
+
+  I chose to use the Bootstrap library - partially because I noticed it's in the job description and partially because I simply like using it. I chose not to use the provided template because
+  I wanted to explore different layout options, which is really fun to do in Bootstrap because of its flexibility. All requirements, per the Read Me, should be fulfilled. Pages are fully responsive and mobile friendly.
+
+  Hope you like it!
+
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,9 +25,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="assets/css/now-ui-dashboard.css?v=1.3.0" rel="stylesheet" />
+  <link href="assets/css/lakers_project.css?v=1.3.0" rel="stylesheet" />
 
 </head>
+
+<!-- Using different types of CSS. This is internal -->
 
 <style>
 
@@ -28,7 +44,9 @@
   .panel-header {
     background-image: url('assets/img/header_img.png') !important;
   }
+
 </style>
+
 <body>
   <div class="wrapper ">
     <div class="sidebar">
@@ -86,6 +104,9 @@
               <p>Laker Girls</p>
             </a>
           </li>
+
+          <!--******* Requirement: The addition of 2 ads *******-->
+
           <li>
             <img src="assets/img/delta_ad.jpg" style="width:100%;bottom: 0px !important">
           </li>
@@ -96,7 +117,7 @@
       </div>
     </div>
     <div class="main-panel" id="main-panel">
-      <!-- Navbar -->
+      <!-- Navbar for mobile -->
       <nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
         <div class="container-fluid">
           <div class="navbar-wrapper">
@@ -130,6 +151,12 @@
       </nav>
       <!-- End Navbar -->
       <div class="panel-header panel-header-lg">
+
+        <!-- 
+        Using different types of CSS: This is inline.
+        Score banner is hardcoded. Could be dynamic with the use of APIs, which I don't have access to
+        -->
+
         <table style="background-color: #ffffff;bottom:50px;position:absolute;width:100%;text-align:center;vertical-align: middle;">
           <tr>
             <td style="width:10%;">
@@ -153,14 +180,14 @@
         </table>
       </div>
 
-      <!-- Unable to obtain stats through API so stats are hardcoded -->
+      <!-- Unable to obtain stats through API so stats are also hardcoded -->
       <div class="content">
         <div class="row">
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
                 <h4 class="card-title">Offensive Leaders</h4>
-                <h5 class="card-category">Global Sales</h5>
+                <h5 class="card-category">Points</h5>
               </div>
               <div class="card-body">
                 <table class="table table-hover">
@@ -203,7 +230,7 @@
             <div class="card card-chart">
               <div class="card-header">
                 <h4 class="card-title">Defensive Leaders</h4>
-                <h5 class="card-category">2018 Sales</h5>
+                <h5 class="card-category">Rebounds</h5>
               </div>
               <div class="card-body">
                 <table class="table table-hover">
@@ -248,7 +275,7 @@
             <div class="card card-chart">
               <div class="card-header">
                 <h4 class="card-title">Team Stats</h4>
-                <h5 class="card-category">Email Statistics</h5>
+                <h5 class="card-category"></h5>
               </div>
               <div class="card-body">
                 <table class="table">
@@ -443,7 +470,7 @@
   <script src="assets/js/core/popper.min.js"></script>
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <script src="assets/js/now-ui-dashboard.min.js?v=1.3.0" type="text/javascript"></script>
+  <script src="assets/js/lakers_project.min.js?v=1.3.0" type="text/javascript"></script>
   <script>
     $(document).ready(function() {
       demo.initDashboardPageCharts();
