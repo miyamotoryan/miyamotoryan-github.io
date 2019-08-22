@@ -231,8 +231,7 @@ jQuery(function ($) {
 
 
 
-
-
+ 
 
     // -------------------------------------------------------------
     // STELLAR FOR BACKGROUND SCROLLING
